@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 2495685494777378261}
   - component: {fileID: 2495685494777378258}
   - component: {fileID: 2111463559}
+  - component: {fileID: 2019367626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -475,7 +476,7 @@ MonoBehaviour:
         targetObject: {fileID: 0}
         select: 1
         index: 0
-    canUseNavigationMesh: 0
+    canUseNavigationMesh: 1
     character: {fileID: 2495685494777378263}
     animatorConstraint: 0
     characterController: {fileID: 2495685494777378261}
@@ -491,7 +492,7 @@ MonoBehaviour:
     verticalSpeed: 0
     normal: {x: 0, y: 1, z: 0}
   save: 1
-  inputType: 1
+  inputType: 0
   mouseButtonMove: 0
   mouseLayerMask:
     serializedVersion: 2
@@ -596,6 +597,22 @@ MonoBehaviour:
     varObj:
       value: {fileID: 0}
   isExpanded: 1
+--- !u!114 &2019367626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495685494777378259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed97a0539635e44c2923df89fd2cb2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gid: afea2346-a3b2-4011-a026-2e5092044c8e
+  currentWeapon: {fileID: 0}
+  currentAmmo: {fileID: 0}
+  chargeShotStartTime: 0
 --- !u!1 &2495685494804667999
 GameObject:
   m_ObjectHideFlags: 0
