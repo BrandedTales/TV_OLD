@@ -388,6 +388,10 @@ GameObject:
   - component: {fileID: 2495685494777378258}
   - component: {fileID: 2111463559}
   - component: {fileID: 2019367626}
+  - component: {fileID: 976154327}
+  - component: {fileID: 1516654364}
+  - component: {fileID: 1516654365}
+  - component: {fileID: 1516654366}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -613,6 +617,162 @@ MonoBehaviour:
   currentWeapon: {fileID: 0}
   currentAmmo: {fileID: 0}
   chargeShotStartTime: 0
+--- !u!114 &976154327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495685494777378259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1a1bad10d7340b28594393bc102fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gid: bc6f6089-24dd-4519-a208-2c7edb843073
+  equipment:
+    items:
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+    - isEquipped: 0
+      itemID: 0
+  saveEquipment: 1
+--- !u!114 &1516654364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495685494777378259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c66432af9c27436c8adc67ae3963b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gid: abeecf9d-b985-4d33-83ad-e7c536508c47
+  saveStats: 1
+  statsOverrides:
+  - statUniqueID: 1b32eff975384491920daa53f2fc0acc
+    overrideValue: 1
+    baseValue: 3
+    overrideFormula: 0
+    formula: {fileID: 0}
+  - statUniqueID: 5a49dd6d8df7474ca9d73deab72b733a
+    overrideValue: 0
+    baseValue: 0
+    overrideFormula: 0
+    formula: {fileID: 0}
+--- !u!114 &1516654365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495685494777378259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5427d7a3d7317485f8580bfb4a87d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variable:
+    name: target
+    save: 0
+    type: 6
+    tags: 0
+    varStr:
+      value: 
+    varNum:
+      value: 0
+    varBol:
+      value: 0
+    varCol:
+      value: {r: 1, g: 1, b: 1, a: 1}
+    varVc2:
+      value: {x: 0, y: 0}
+    varVc3:
+      value: {x: 0, y: 0, z: 0}
+    varTxt:
+      value: {fileID: 0}
+    varSpr:
+      value: {fileID: 0}
+    varObj:
+      value: {fileID: 0}
+  isExpanded: 1
+--- !u!114 &1516654366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495685494777378259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aebffaa95c584b0f8adb07806262afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gid: bc55d9c9-62f1-4911-8173-c2751b97f0bb
+  references:
+  - {fileID: 1516654365}
 --- !u!1 &2495685494804667999
 GameObject:
   m_ObjectHideFlags: 0

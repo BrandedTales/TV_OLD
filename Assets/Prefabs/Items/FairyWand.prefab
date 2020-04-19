@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 7632808823682249590}
   - component: {fileID: 7632808823682249483}
   - component: {fileID: 7632808823682249588}
+  - component: {fileID: 9055024970350811054}
   m_Layer: 0
   m_Name: ActionPickup
   m_TagString: Untagged
@@ -189,6 +190,7 @@ MonoBehaviour:
   - {fileID: 7632808823682249588}
   - {fileID: 7632808823682249483}
   - {fileID: 7632808823682249590}
+  - {fileID: 9055024970350811054}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &7632808823682249585
@@ -327,6 +329,40 @@ MonoBehaviour:
   itemHolder:
     item: {fileID: -1128095828904869751, guid: 7db43c44761c8486cb3f2e9968376eb5, type: 2}
   amount: 1
+--- !u!114 &9055024970350811054
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7632808823682249587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 182ce00a07e144b13a680dc409247594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  shooter:
+    target: 0
+    gameObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
+  weapon: {fileID: 11400000, guid: 2c54e6cd4a27dea4fb0b08399fc39a04, type: 2}
+  ammo: {fileID: 11400000, guid: 944a5f674b3c30e46b57ed8a8581959a, type: 2}
 --- !u!1 &7632808823713144548
 GameObject:
   m_ObjectHideFlags: 0
