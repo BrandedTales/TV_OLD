@@ -16594,30 +16594,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6762761971646724420, guid: 7f5581ac1adca72428e38124d635cca4,
-        type: 3}
-      propertyPath: characterLocomotion.jumpForce
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6762761971646724420, guid: 7f5581ac1adca72428e38124d635cca4,
-        type: 3}
-      propertyPath: acceleration
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6762761971646724421, guid: 7f5581ac1adca72428e38124d635cca4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.56
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6762761971646724421, guid: 7f5581ac1adca72428e38124d635cca4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6762761971646724421, guid: 7f5581ac1adca72428e38124d635cca4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6762761971646724421, guid: 7f5581ac1adca72428e38124d635cca4,
         type: 3}
@@ -16658,16 +16648,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6762761971646724422, guid: 7f5581ac1adca72428e38124d635cca4,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6762761971646724422, guid: 7f5581ac1adca72428e38124d635cca4,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 6762761971646724424, guid: 7f5581ac1adca72428e38124d635cca4,
         type: 3}
@@ -20600,16 +20580,21 @@ PrefabInstance:
     - target: {fileID: 3266529696862339801, guid: 7e851252237fedb48b04457d986ceda5,
         type: 3}
       propertyPath: sceneName.value
-      value: Dungeon1
+      value: Dungeon1-3
       objectReference: {fileID: 0}
     - target: {fileID: 3266529696862339801, guid: 7e851252237fedb48b04457d986ceda5,
         type: 3}
       propertyPath: playerPosition.x
-      value: 11
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 3266529696862339801, guid: 7e851252237fedb48b04457d986ceda5,
         type: 3}
       propertyPath: playerPosition.z
+      value: -9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266529696862339801, guid: 7e851252237fedb48b04457d986ceda5,
+        type: 3}
+      propertyPath: playerPosition.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -1225,7 +1225,7 @@ MonoBehaviour:
     maxFallSpeed: -100
     canRun: 1
     canJump: 1
-    jumpForce: 6
+    jumpForce: 3
     jumpTimes: 1
     timeBetweenJumps: 0.5
     pushForce: 1
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   invertAxis: 0
   jumpKey: 32
   useAcceleration: 1
-  acceleration: 4
+  acceleration: 3
   deceleration: 2
 --- !u!114 &6762761971646724423
 MonoBehaviour:
@@ -1335,13 +1335,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.75
+  m_Height: 1.6
   m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!114 &6762761971646724425
 MonoBehaviour:
   m_ObjectHideFlags: 0
