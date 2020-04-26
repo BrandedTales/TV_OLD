@@ -874,8 +874,9 @@ GameObject:
   - component: {fileID: 3208040529100277763}
   - component: {fileID: 4421497908744918038}
   - component: {fileID: 6977617655283089491}
+  - component: {fileID: 943840887}
   m_Layer: 0
-  m_Name: EquipWeapon1Action
+  m_Name: FireWeapon1Action
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,6 +930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 4421497908744918038}
+  - {fileID: 943840887}
   - {fileID: 6977617655283089491}
   executingIndex: -1
   isExecuting: 0
@@ -947,7 +949,7 @@ MonoBehaviour:
   isExpanded: 1
   prefab:
     target: 3
-    gameObject: {fileID: 4063700360290060394, guid: 300f2dfd63d8cc04d83095162c672c74,
+    gameObject: {fileID: 4063700360290060394, guid: 08c6be71e5415e0489dd0a60f3fe8dd3,
       type: 3}
     global:
       allowTypesMask: 512
@@ -1029,6 +1031,34 @@ MonoBehaviour:
       select: 1
       index: 0
   waitToFinish: 0
+--- !u!114 &943840887
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2407895302072045397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc32ca7866e542f39008521c19ce787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  variable:
+    variableType: 1
+    global:
+      allowTypesMask: -1
+      name: 
+    local:
+      allowTypesMask: -1
+      name: CurrentShot
+      targetType: 0
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
 --- !u!1 &8727444368428701460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1073,7 @@ GameObject:
   - component: {fileID: 3162761345972598563}
   - component: {fileID: 1062860661319212172}
   m_Layer: 0
-  m_Name: EquipWeapon2Action
+  m_Name: FireWeapon2Action
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1115,7 +1145,7 @@ MonoBehaviour:
   isExpanded: 1
   prefab:
     target: 3
-    gameObject: {fileID: 4063700360290060394, guid: 08c6be71e5415e0489dd0a60f3fe8dd3,
+    gameObject: {fileID: 4063700360290060394, guid: 300f2dfd63d8cc04d83095162c672c74,
       type: 3}
     global:
       allowTypesMask: 512

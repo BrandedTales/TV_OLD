@@ -2788,7 +2788,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
-  stat: {fileID: -7900445501189838201, guid: 0431ef4462ebb4e059a79b2feeb54f7c, type: 2}
+  stat: {fileID: 0}
   operation: 0
   valueType: 0
   amount:
@@ -3032,7 +3032,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
-  stat: {fileID: -7900445501189838201, guid: 0431ef4462ebb4e059a79b2feeb54f7c, type: 2}
+  stat: {fileID: 0}
   icon: {fileID: 0}
   color: {fileID: 0}
   title: {fileID: 2116908349}
@@ -3071,7 +3071,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
-  stat: {fileID: 1530807384175094565, guid: 0431ef4462ebb4e059a79b2feeb54f7c, type: 2}
+  stat: {fileID: 0}
   icon: {fileID: 0}
   color: {fileID: 0}
   title: {fileID: 1745994694}
@@ -3110,7 +3110,7 @@ MonoBehaviour:
     eventChangeVariable:
       m_PersistentCalls:
         m_Calls: []
-  stat: {fileID: 8245900726620144861, guid: 0431ef4462ebb4e059a79b2feeb54f7c, type: 2}
+  stat: {fileID: 0}
   icon: {fileID: 0}
   color: {fileID: 0}
   title: {fileID: 1692492821}
@@ -4515,7 +4515,7 @@ MonoBehaviour:
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
   CanvasName: CoreGameplay
-  CustomCanvasName: 0
+  CustomCanvasName: 1
   DontDestroyCanvasOnLoad: 1
 --- !u!1 &3726602757163013417
 GameObject:

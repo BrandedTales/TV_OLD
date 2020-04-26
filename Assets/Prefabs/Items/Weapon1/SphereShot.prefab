@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 147147168}
   - component: {fileID: 147147170}
   - component: {fileID: 147147169}
+  - component: {fileID: 6040042785286356372}
   m_Layer: 0
   m_Name: Hit
   m_TagString: Untagged
@@ -69,6 +70,7 @@ MonoBehaviour:
   actions:
   - {fileID: 147147170}
   - {fileID: 147147169}
+  - {fileID: 6040042785286356372}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &147147170
@@ -117,6 +119,34 @@ MonoBehaviour:
       select: 1
       index: 0
   waitToFinish: 0
+--- !u!114 &6040042785286356372
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147147166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc32ca7866e542f39008521c19ce787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  variable:
+    variableType: 0
+    global:
+      allowTypesMask: -1
+      name: DEBUG_OBJECT
+    local:
+      allowTypesMask: -1
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
 --- !u!1 &631470556
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +160,8 @@ GameObject:
   - component: {fileID: 631470559}
   - component: {fileID: 631470558}
   - component: {fileID: 631470561}
+  - component: {fileID: 6891491141185327780}
+  - component: {fileID: 4242114090176724221}
   m_Layer: 0
   m_Name: Movement
   m_TagString: Untagged
@@ -184,8 +216,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 4242114090176724221}
   - {fileID: 631470558}
   - {fileID: 631470561}
+  - {fileID: 6891491141185327780}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &631470558
@@ -259,16 +293,16 @@ MonoBehaviour:
       index: 0
   space: 1
   duration:
-    optionIndex: 1
+    optionIndex: 2
     value: 1
     global:
       allowTypesMask: 4
       name: Shot1Speed
     local:
       allowTypesMask: 4
-      name: 
+      name: Speed
       targetType: 2
-      targetObject: {fileID: 0}
+      targetObject: {fileID: 4063700360290060394}
     list:
       targetType: 3
       targetObject: {fileID: 0}
@@ -288,6 +322,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
+--- !u!114 &6891491141185327780
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631470556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9e621b1ec874c8daa5bd0d1aaede64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  logType: 0
+  message: moving...
+--- !u!114 &4242114090176724221
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631470556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ad8fbc98b594905b9beeda17ae68ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 1
+  _object:
+    target: 2
+    gameObject: {fileID: 0}
+    global:
+      allowTypesMask: 512
+      name: 
+    local:
+      allowTypesMask: 512
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+    eventChangeVariable:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2036404984
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,8 +524,9 @@ GameObject:
   - component: {fileID: 2413302384103210602}
   - component: {fileID: 8419071997573310262}
   - component: {fileID: 719831909}
-  - component: {fileID: 719831906}
-  - component: {fileID: 2793111299745301600}
+  - component: {fileID: -749425849380250527}
+  - component: {fileID: 466444203373441899}
+  - component: {fileID: 950168146520866055}
   m_Layer: 0
   m_Name: SphereShot
   m_TagString: Projectile
@@ -709,14 +791,14 @@ MonoBehaviour:
   igniters:
     keys: ffffffff
     values:
-    - {fileID: 719831906}
+    - {fileID: -749425849380250527}
   items:
   - option: 1
     conditions: {fileID: 0}
     actions: {fileID: 147147167}
   minDistance: 0
   minDistanceToPlayer: 5
---- !u!114 &719831906
+--- !u!114 &-749425849380250527
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -725,11 +807,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4063700360290060394}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be369e1556c34293bad9145865dddfa, type: 3}
+  m_Script: {fileID: 11500000, guid: 45d7d21e611a92a4989a80f2103552e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 719831909}
-  otherCollider: {fileID: 0}
+  objectWithTag: Player
   storeSelf:
     variableType: 0
     global:
@@ -749,7 +831,7 @@ MonoBehaviour:
     variableType: 0
     global:
       allowTypesMask: 512
-      name: 
+      name: DEBUG_OBJECT
     local:
       allowTypesMask: 512
       name: 
@@ -760,19 +842,54 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
---- !u!54 &2793111299745301600
-Rigidbody:
+--- !u!114 &466444203373441899
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4063700360290060394}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aebffaa95c584b0f8adb07806262afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gid: 9535a338-3a40-4db5-991f-dcdb356bf7b6
+  references:
+  - {fileID: 950168146520866055}
+--- !u!114 &950168146520866055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4063700360290060394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5427d7a3d7317485f8580bfb4a87d521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variable:
+    name: Speed
+    save: 0
+    type: 2
+    tags: 0
+    varStr:
+      value: 
+    varNum:
+      value: 0.2
+    varBol:
+      value: 0
+    varCol:
+      value: {r: 1, g: 1, b: 1, a: 1}
+    varVc2:
+      value: {x: 0, y: 0}
+    varVc3:
+      value: {x: 0, y: 0, z: 0}
+    varTxt:
+      value: {fileID: 0}
+    varSpr:
+      value: {fileID: 0}
+    varObj:
+      value: {fileID: 0}
+  isExpanded: 1

@@ -1,53 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8938569592062973038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3ca613e87c245f6996bb5850932f56, type: 3}
-  m_Name: Selector
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  useConditionsList: 0
-  prefabConditionsList: {fileID: 0}
-  useActionsList: 0
-  prefabActionsList: {fileID: 0}
-  input: {fileID: -6097356197839383843}
-  outputs:
-  - {fileID: -7242902806184087662}
-  mode: 0
-  editorName: 
-  position: {x: -477, y: -297}
-  composite: 0
---- !u!114 &-7242902806184087662
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaee7f1d0b2dd4de3954af2150d3cf1b, type: 3}
-  m_Name: Task
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  useConditionsList: 0
-  prefabConditionsList: {fileID: 0}
-  useActionsList: 1
-  prefabActionsList: {fileID: 1881357026917203438, guid: 29970662c3b80ed469bad08c8ff03c8a,
-    type: 3}
-  input: {fileID: -8938569592062973038}
-  outputs: []
-  mode: 0
-  editorName: 
-  position: {x: -473, y: -189}
---- !u!114 &-6097356197839383843
+--- !u!114 &-8786545428896593276
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,10 +19,81 @@ MonoBehaviour:
   prefabActionsList: {fileID: 0}
   input: {fileID: 0}
   outputs:
-  - {fileID: -8938569592062973038}
+  - {fileID: -3645465993876650935}
   mode: 0
   editorName: 
-  position: {x: -431, y: -411.5}
+  position: {x: -576, y: -506}
+--- !u!114 &-3677197018518928448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaee7f1d0b2dd4de3954af2150d3cf1b, type: 3}
+  m_Name: Task
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  useConditionsList: 0
+  prefabConditionsList: {fileID: 0}
+  useActionsList: 1
+  prefabActionsList: {fileID: 3834414197756032438, guid: 5a84dffdbc21bff4ca57743f48d3ec69,
+    type: 3}
+  input: {fileID: -3645465993876650935}
+  outputs: []
+  mode: 0
+  editorName: 
+  position: {x: -469, y: -294}
+--- !u!114 &-3645465993876650935
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3ca613e87c245f6996bb5850932f56, type: 3}
+  m_Name: Selector
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  useConditionsList: 0
+  prefabConditionsList: {fileID: 0}
+  useActionsList: 0
+  prefabActionsList: {fileID: 0}
+  input: {fileID: -8786545428896593276}
+  outputs:
+  - {fileID: -336134742729921736}
+  - {fileID: -3677197018518928448}
+  mode: 0
+  editorName: 
+  position: {x: -626.5, y: -414}
+  composite: 1
+--- !u!114 &-336134742729921736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaee7f1d0b2dd4de3954af2150d3cf1b, type: 3}
+  m_Name: Task
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  useConditionsList: 0
+  prefabConditionsList: {fileID: 0}
+  useActionsList: 1
+  prefabActionsList: {fileID: 1112685195326240437, guid: 268d37110a365574d9ead902d553b94e,
+    type: 3}
+  input: {fileID: -3645465993876650935}
+  outputs: []
+  mode: 0
+  editorName: Wait
+  position: {x: -718.5, y: -302}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,16 +104,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f6fc1f28238a4adb8d1747178271dc5, type: 3}
-  m_Name: Patrol
+  m_Name: AimAndShoot
   m_EditorClassIdentifier: 
-  root: {fileID: -6097356197839383843}
+  root: {fileID: -8786545428896593276}
   nodes:
-  - {fileID: -6097356197839383843}
-  - {fileID: -8938569592062973038}
-  - {fileID: -7242902806184087662}
+  - {fileID: -8786545428896593276}
+  - {fileID: -3645465993876650935}
+  - {fileID: -336134742729921736}
+  - {fileID: -3677197018518928448}
   blackboard:
-    list:
-    - name: PatrolActions
-      type: 9
-  position: {x: 277, y: 179}
+    list: []
+  position: {x: 123, y: 298}
   zoom: 1

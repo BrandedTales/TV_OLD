@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3247faaff1642b0aa83bf65ab47007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: Fire Key?
+  description: Air Key?
   conditionsList: {fileID: 1644914866}
   actions: {fileID: 3266529696862339803}
   isExpanded: 1
@@ -191,7 +191,7 @@ MonoBehaviour:
     variableType: 0
     global:
       allowTypesMask: 8
-      name: Dungeon-One-Fire-Key
+      name: Dungeon-One-Air-Key
     local:
       allowTypesMask: 8
       name: 
@@ -246,7 +246,7 @@ Transform:
   m_GameObject: {fileID: 3266529695649357910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.569286, y: 2.7827883, z: 4.2846546}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
   m_Children:
   - {fileID: 3266529696862339798}
   - {fileID: 1644914863}
@@ -272,7 +272,7 @@ MonoBehaviour:
   items:
   - option: 0
     conditions: {fileID: 1644914864}
-    actions: {fileID: 0}
+    actions: {fileID: 3266529696862339803}
   minDistance: 0
   minDistanceToPlayer: 5
 --- !u!114 &3266529695649357908
@@ -385,7 +385,7 @@ MonoBehaviour:
   isExpanded: 1
   sceneName:
     optionIndex: 0
-    value: TestBed
+    value: Dungeon1-5
     global:
       allowTypesMask: 2
       name: 
@@ -399,5 +399,5 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
-  playerPosition: {x: 0, y: 0.5, z: 0}
+  playerPosition: {x: -1.5, y: 1, z: 2}
   playerRotation: {x: 0, y: 0, z: 0, w: 1}
